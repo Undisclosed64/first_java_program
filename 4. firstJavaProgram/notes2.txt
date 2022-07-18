@@ -1,0 +1,43 @@
+1. Type conversion and casting
+
+Java automatically coverts the type when the following two conditions are met:
+
+1. the two types should be compatible.
+2. the destination type given should be greater than the source type. Like we know float is greater than integers. In integer we can only add integer value but in float we can add both integer and decimal.
+
+
+Type casting is when you assign a value of one primitive data type to another type.
+
+In Java, type casting is a method or process that converts a data type into another data type in both ways manually and automatically.
+
+Types of Type Casting
+There are two types of type casting:
+
+Widening Type Casting
+Narrowing Type Casting
+
+Compressing the bigger data type in a smaller type explicitly is known as narrowing typecasting.
+For example, converting float into int.
+
+2. Automatic type promotion in expressions
+When we give more than a data type's maximum limit, it just stores the part it can handle leaving the previous part.
+While evaluating expressions, the intermediate value may exceed the range of operands and hence the expression value will be promoted. Some conditions for type promotion are:  
+
+Type promotion rules:
+1. Java automatically promotes each byte, short, or char operand to int when evaluating an expression.
+
+2. If one operand is long, float or double the whole expression is promoted to long, float, or double respectively.
+System.out.println(3 * 5.6);
+//gives float 16.799999999999997
+
+One main example:
+byte b = 42;
+char c = 'a';
+short s = 1024;
+int i = 3000;
+float f = 5.67f;
+double result = (f * b) + (i / c) - (d * s);
+//float + int * double = double; //since double is biggest of all.
+
+
+3. While loop
